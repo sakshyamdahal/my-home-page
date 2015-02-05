@@ -25,13 +25,6 @@
   	})
   });
 
-  $(function() {
-  	$('#go_home').click(function () {
-
-  		$('body').scrollTo('#home', {duration:'slow'});
-
-  	})
-  });
 
   $(function() {
   	$('#things').click(function () {
@@ -43,11 +36,13 @@
 
   $(function() {
   	$('#me').click(function () {
-
-  		$('body').scrollTo('#about-me', {duration:'slow'});
+  		 $('body').scrollTo('#about-me', {duration:'slow'});
+  		 
 
   	})
   });
+
+
   </script>
 
 
@@ -58,7 +53,7 @@
       $(".element p").typed({
         strings: ["Hello my name is Sakshyam Dahal. I am a software enginner.", "I am a java programmer.",
         "I am a rails developer.", "I am a perl programmer.", "I am an android developer.", 
-        "Check out my info to know more about me and to contact me.", "Hello my name is Sakshyam. I am a software enginner."],
+        "Check out my info to know more about me and to contact me.", "Hello my name is Sakshyam Dahal. I am a software enginner."],
         contentType: 'html',
         typeSpeed: 50
       });
@@ -82,10 +77,10 @@
 		<h1><em>@</em> SAKSHYAM DAHAL</h1>
 		<nav id="navigation">
 			<ul id="menu">
-				<li id="go_home"><a href="#home">Home</a></li>
-				<li id="me"><a href="#about-me">About me</a></li>
-				<li id="things"><a href="#things-i-like">I like</a></li>
-				<li id="go_footer"><a href="#">Footer</a></li>
+				<!-- <li id="go_home"><a href="#home">Home</a></li> -->
+				<li id="me"><a href="#about-me">Home</a></li>
+				<li id="things"><a href="#things-i-like">About me</a></li>
+				<li id="go_footer"><a href="#">Contact</a></li>
 			</ul>
 		</nav>
 		<h2>Welcome to my home page</h2>
@@ -96,23 +91,57 @@
 
 	
 	<div id="about-me">
-		<img src="myimage.png" alt="Picture of Sakshyam Dahal" height="300px" >
+		<a href="myimage.png" target="_blank"><img src="myimage.png" alt="Picture of Sakshyam Dahal" height="300px" ></a>
 		<div class="element">
 			<p></p>
 		</div>
-		
+
 	</div>
 	
 
 	
 	<div id="things-i-like">
+		<div class="contact_info">
+			<img src="email.png" alt="email" >
+			<img src="phone.png" alt="email" >
+			<img src="address.png" alt="email" >
+
+			<ul id = "contact_info_list">
+				<li><a href="mailto:dahalsakshyam@gmail.com">dahalsakshyam@gmail.com</a></li>
+				<li class="proper_align">(8030-662-0726</li>
+				<li class="proper_align"><a href="https://www.google.com/maps/place/400+Magnolia+St,+Orangeburg,+SC+29115/@33.4990214,-80.854211,17z/data=!3m1!4b1!4m2!3m1!1s0x88f8d4fdebd176e3:0x49f8c1a22dce3683" target="_blank">400 Magnolia Street, Orangeburg, SC</a></li>
+			</ul>
+		</div>
+
+		<h3>ABOUT ME</h3>
+		<p>Currently I am a presidential scholar at Claflin University, Orangeburg, SC majoring in computer engineering. Computer technology is my passion and I am always looking for opportunities to enhance my expertise in computer sciences. Apart from the courses I am taking at my university I am taking online classes from Coursera and Edx to enhance my studies. I have participated in several hackathons and programming competitions ( VTHacks, UAF BeU Hackathon, RSI Hackathon, CCSC Programming Contest ) and gained valuable experiences out of them. 
+		<br />
+		<br />
+		I am a self motivated individual with a vision to touch the life of billions of people through technology.</p>
+		<h4>I like.....</h4>
+		<ul>
+			<li>Watching movies</li>
+			<li>Travelling places</li>
+			<li>Reading books</li>
+			<li>Programming</li>
+		</ul>
+
+		<a class="center_a" href="education.html">-----------MORE ABOUT ME-------------</a>
+
+	</div>
+
+	<div class="contact_info social_media" >
+		<p>Some other ways to contact me.</p>
+		<a href="https://www.facebook.com/sakshamdahal" target="_blank"><img src="fb.png" alt="email" ></a>
+		<a href="https://twitter.com/sakshyamdahal" target="_blank"><img src="twitter.png" alt="email" ></a>
+		<a href="http://www.linkedin.com/in/sakshyamdahal/en" target="_blank"><img src="ln.png" alt="email" ></a>
 	</div>
 	
 
 	
 	<footer id="footer">
-		
-	</footer>
+		<p>&copy; 2015, Sakshyam, Inc</p> 
+		<p class="copyright">Icons made by <a href="http://www.unocha.org" title="OCHA">OCHA</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>         is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></p></footer>
 	
 	
 </body>
