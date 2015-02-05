@@ -71,7 +71,7 @@ header nav{
 
 header hr
 {
-	border-color: #DE1B1B;
+	/*border-color: #DE1B1B;*/
 	height: 5px;
 	/*width: 75%;*/
 	background-color: #DE1B1B;
@@ -126,7 +126,7 @@ ul#contact_info_list{
 
 h3{
 	text-align: center;
-	font-weight: 40px;
+	font-weight: bold;
 	font-size: 30px;
 }
 
@@ -225,7 +225,7 @@ footer p{
 	margin: 0px;
 	color: white;
 
-	font-weight: 20%;
+	font-weight: bold;
 	font-size: 30px;
 	padding-top: 30px;
 	padding-left: 30px;
